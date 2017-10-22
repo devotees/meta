@@ -17,8 +17,7 @@ apt-get update && apt-get install tmux git vim irssi
 
 addgroup devotees
 
-create_devotee anja
-create_devotee saul
+for devname in $* ; do create_devotee $devname ; done
 
 # allow devotees to log-in with ssh
 sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
