@@ -2,7 +2,6 @@
 
 function cleanup {
     rm -rf ~/wemux
-    rm -rf usr/local/etc/wemux.conf
 }
 trap cleanup EXIT
 
@@ -30,15 +29,17 @@ sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_c
 service ssh restart
 
 # wemux initial setup
-git clone https://github.com/zolrath/wemux.git
-mv -f wemux /usr/local/share/
-ln -sf /usr/local/share/wemux/wemux /usr/local/bin/wemux
-cp /usr/local/share/wemux/wemux.conf.example /usr/local/etc/wemux.conf
-cat <<HERE >> /usr/local/etc/wemux.conf
+if [ ! -d /usr/local/share/wemux ] ; then
+  git clone https://github.com/zolrath/wemux.git
+  mv -f wemux /usr/local/share/
+  ln -sf /usr/local/share/wemux/wemux /usr/local/bin/wemux
+  cp /usr/local/share/wemux/wemux.conf.example /usr/local/etc/wemux.conf
+  cat <<HERE >> /usr/local/etc/wemux.conf
 host_groups=devotees
 default_client_mode=rogue
 allow_server_change=true
 options=-u
 HERE
+fi
 
 
