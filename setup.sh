@@ -1,5 +1,10 @@
 #!/bin/bash
 
+function cleanup {
+    rm -rf ~/wemux
+}
+trap cleanup EXIT
+
 create_devotee () {
     # create user
     dev=$1
