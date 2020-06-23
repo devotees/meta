@@ -4,7 +4,7 @@ This agreement covers source code, designs, scripts, documentation, names, marks
 
 # Parties
 
-The parties to this agreement are Ryan Prior and Saul Pwanson (hereafter, "the parties")
+The parties to this agreement are Ryan Prior and Saul Pwanson (hereafter, "the parties").
 
 # Eligibility
 
@@ -14,7 +14,12 @@ The parties represent that no agreement or contract with any other party, such a
 
 The parties acknowledge a shared responsibility to contribute time and/or capital to the improveemnt of the system and promotion of its usefulness.
 
-The parties will meet monthly to agree upon a mutually acceptable level of contribution at that time. At this meeting the parties will determine the number of hours of work and tasks to be performed by each party, any payments to be made to any party, by whom and at what rate of pay. The parties agree to maintain a digital record of these agreements.
+The parties will meet monthly to agree upon a mutually acceptable level of contribution at that time. At this meeting the parties will determine:
+   - the number of hours of work
+   - tasks to be performed by each party
+   - the amount and method of payments to be made
+
+The parties agree to maintain a digital record of these agreements.
 
 # Equity
 
@@ -34,4 +39,4 @@ If any portion or provision of this agreement (including, without limitation, an
 
 # Termination
 
-Either party can terminate this agreement. The terminating party agrees to transfer all rights and property related to the system to the other party.
+Either party can terminate this agreement at any time. The terminating party agrees to transfer any remaining rights and property related to the system to the other party.
